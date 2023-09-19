@@ -1,6 +1,6 @@
 {
-  "chart.tsx -> ../components/statistics/AttendanceJandi": {
-    "id": "chart.tsx -> ../components/statistics/AttendanceJandi",
+  "index.tsx -> ../components/statistics/AttendanceJandi": {
+    "id": "index.tsx -> ../components/statistics/AttendanceJandi",
     "files": [
       "static/chunks/components_statistics_AttendanceJandi_tsx.js"
     ]
