@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"chart.tsx -> ../components/statistics/AttendanceJandi\":{\"id\":\"chart.tsx -> ../components/statistics/AttendanceJandi\",\"files\":[\"static/chunks/components_statistics_AttendanceJandi_tsx.js\"]}}"
