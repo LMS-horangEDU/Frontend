@@ -4,5 +4,11 @@
     "files": [
       "static/chunks/components_statistics_AttendanceJandi_tsx.js"
     ]
+  },
+  "index.tsx -> ../components/statistics/CodingMBTI": {
+    "id": "index.tsx -> ../components/statistics/CodingMBTI",
+    "files": [
+      "static/chunks/components_statistics_CodingMBTI_tsx.js"
+    ]
   }
 }
