@@ -1,6 +1,7 @@
 {
   "name": "horangedu-fe",
   "version": "0.1.0",
+  "license": "Horang_Edu",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,14 +13,19 @@
     "@nivo/bar": "^0.83.0",
     "@nivo/calendar": "^0.83.0",
     "@nivo/core": "^0.83.0",
+    "@nivo/pie": "^0.83.0",
     "@types/node": "20.6.2",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
+    "chart.js": "^4.4.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
+    "sass": "^1.68.0",
+    "sass-loader": "^13.3.2",
     "typescript": "5.2.2"
   },
   "devDependencies": {

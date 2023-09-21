@@ -1,0 +1,46 @@
+/** index.tsx */
+.totalTemplate {
+  padding-left: 4rem;
+}
+
+.topSpanContainer {
+  padding-left: 0.5rem;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.hello {
+  color: #F37658;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+}
+
+.randomComment {
+  padding-top: 1.2rem;
+  color: #000;
+  font-family: Pretendard Variable;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  display: flex;
+}
+
+.weeklyStudyContainer {
+  width: 50%;
+  height: auto;
+  padding: 3rem 0 0 0.5rem;
+  position: relative;
+}
+.weeklyStudyContainer span {
+  color: #000000;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}/*# sourceMappingURL=Home.module.css.map */
