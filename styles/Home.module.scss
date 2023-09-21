@@ -44,20 +44,14 @@
   padding: 1rem 0 0 0.5rem;
   background-color: #F37658;
   position: relative;
-
   
-  span {
+  p {
     color: #000000;
     font-size: 1.4375rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
   }
-}
-
-.graphContainer {
-  width: 80%;
-  height: 15.81rem;
 }
 
 .innerTextContainer {
@@ -72,6 +66,11 @@
   display: flex;
 }
 
+.graphContainer {
+  width: 80%;
+  height: 15.81rem;
+}
+
 .studyingProgressContainer {
   width: 31.25rem;
 height: 15.75rem;
@@ -79,3 +78,118 @@ border-radius: 1rem;
 background: #E4F9E3;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    & article {
+        position: relative;
+        min-height: 18.75rem;
+        & h2 {
+            margin-bottom: 1.25rem;
+        }
+    }
+    & article.ly_col_30 {
+        width: calc(30% - 1.875rem);
+        min-width: 18.75rem;
+    }
+    & article.ly_col_40 {
+        width: 40%;
+        min-width: 26.875rem;
+    }
+    & .contentBox {
+        width: 100%;
+        height: calc(100% - 3.4375rem);
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        padding: 0.9375rem;
+        overflow: hidden;
+        // box-sizing: border-box;
+    }
+
+    & .moreInfo {
+        position: absolute;
+        top: 0.3125rem;
+        right: 0;
+        display: flex;
+        align-items: center;
+        color: #aaa;
+    }
+}
+
+.rankingList {
+    & li {
+        display: block;
+        padding: 0.56rem 0.7rem;
+        margin: 0.4rem 0;
+        & p {
+            font-weight: 500;
+            & .rank {
+                display: inline-block;
+                width: 2.8125rem;
+            }
+            & .score {
+                font-weight: 700;
+                float: right;
+            }
+        }
+    }
+    & li:first-child {
+        border: 2px solid #ffa703;
+        border-radius: 1.25rem;
+    }
+    & li:nth-child(2) {
+        background-color: #ffece8;
+        border-radius: 1.25rem;
+    }
+}
+
+.mbtiBox {
+    background-color: #f2f5fa;
+
+    & > p {
+        & span {
+            display: inline-block;
+            background-color: #be89e5;
+            padding: 6px 10px;
+            font-weight: 700;
+            border-radius: 20px;
+        }
+    }
+}
+
+.attendanceBox {
+    background-color: #fff3d7;
+    border: none !important;
+
+    & ul {
+        width: 100%;
+        & li {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+.badgeBox {
+    position: relative;
+    height: 8.125rem !important;
+    & p {
+        display: flex;
+        color: #aaa;
+        line-height: 6rem;
+        & span {
+            font-weight: 700;
+            color: #5e3ec5;
+            font-size: 2.25rem;
+            padding: 0 0.625rem;
+        }
+    }
+    & img {
+        position: absolute;
+        right: 20px;
+        bottom: -20px;
+    }
+
+  }
