@@ -1,4 +1,7 @@
 import React from 'react';
+import styles from '@/styles/Home.module.scss';
+import Link from 'next/link';
+import { IoIosArrowForward } from 'react-icons/io';
 
 const Ranking = () => {
     const mockData = new Map([
@@ -14,25 +17,32 @@ const Ranking = () => {
     };
 
     return (
-        <div>
+        <article className={styles.ly_col_30}>
             <h2>랭킹</h2>
-            <ul>
-                <li>
-                    <p>
-                        {myScoreMockData.school}
-                        <span>{myScoreMockData.score}</span>
-                    </p>
-                </li>
-                {Array.from(mockData).map(([school, score]) => (
-                    <li key={school}>
+            <Link href={'/'} className={styles.moreInfo}>
+                자세히 보기 <IoIosArrowForward />
+            </Link>
+            <div className={styles.contentBox}>
+                <ul className={styles.rankingList}>
+                    <li>
                         <p>
-                            {school}
-                            <span>{score}</span>
+                            <span className={styles.rank}>134</span>
+                            {myScoreMockData.school}
+                            <span className={styles.score}>{myScoreMockData.score} P</span>
                         </p>
                     </li>
-                ))}
-            </ul>
-        </div>
+                    {Array.from(mockData).map(([school, score], index) => (
+                        <li key={school}>
+                            <p>
+                                <span className={styles.rank}>{index + 1}</span>
+                                {school}
+                                <span className={styles.score}>{score} P</span>
+                            </p>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </article>
     );
 };
 
