@@ -1,0 +1,64 @@
+/**Sidebar.tsx */
+.sidebar {
+    left: 0;
+    top: 0;
+    width: 15.625rem;
+    height: 100vh;
+    background: #fcfcfc;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    position: fixed;
+}
+
+.logoContainer {
+    padding: 1.75rem 4.28rem 2.81rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.buttonContainer {
+    height: 9rem;
+    padding: 0 0.9rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    gap: 0.7rem;
+}
+
+.mainLayout {
+    & main {
+        width: calc(100% - 15.625rem);
+        min-height: 100vh;
+        margin-left: 15.625rem;
+        padding: 1.875rem;
+    }
+}
+
+.navButton {
+    width: 13.8125rem;
+    height: 2.4375rem;
+
+    &_active {
+        width: 13.8125rem;
+        height: 2.4375rem;
+        color: #ffffff;
+        font-size: 0.94rem;
+        font-weight: 500;
+        border-radius: 0.625rem;
+        background: #5e3ec5;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    &_inActive {
+        width: 13.8125rem;
+        height: 2.4375rem;
+        color: #000000;
+        font-size: 0.94rem;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+    }
+}
