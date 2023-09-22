@@ -138,38 +138,45 @@
     display: flex;
 
     .leftBox {
-        justify-content: flex-start;
         flex-direction: column;
-        display: flex;
         position: relative;
-
+        
         span {
-            padding-bottom: 0.5rem;
-            &:nth-of-type(1) {
+            align-items: center;
+            position: relative;
+            &:first-of-type {
                 color: #6B6B6B;
                 font-size: 0.875rem;
                 font-weight: 500;
                 line-height: normal;
+                align-items: center;
+                display: flex;
+                gap: 0.2rem;
             } 
 
-            }
             &:nth-of-type(2) {
-                color: #000;
+                margin: 0.5rem 0 0.7rem;                color: #000;
                 font-size: 1rem;
                 font-weight: 800;
-                line-height: normal;  
+                line-height: normal; 
+                display: flex;
+            }
+
+            &:last-child {
+                color: #AAA !important;
+                font-size: 1rem;
+                font-weight: 800 !important;
+                line-height: normal;
             }
         }
+    }
 
         p {
             color: #3F9F43;
             font-size: 1rem;
-            font-weight: 800;
+            font-weight: 800 ;
             line-height: normal;
-
-           & span {
-            color: #AAA;
-            }
+            display: flex;
         }
 
         button {
@@ -204,14 +211,15 @@
     .studyingProgressPie {
         width: 50%;
         height: 9.75rem;
-        justify-content: flex-end;
+        justify-content: center;
+        align-items: center;
         display: flex;
         position: relative;
+        float: right;
     }
   }
 
   .percentage {
-    margin: 6.8rem 0 0 5rem;
     color: #3F9F43;
     text-align: right;
     font-size: 1.4375rem;
@@ -226,7 +234,8 @@
   .quizContainer {
     width: 40%;
     height: auto !important;
-    padding: 2rem 0 0 0.5rem;
+    margin-left: 2rem;
+    padding-top: 2rem;
     position: relative;
     span {
           color: #000;
@@ -239,7 +248,7 @@
         }
 
     .grayBox {
-        margin: 2rem 0 0 1rem;
+        margin-top: 2rem;
         padding: 0.69rem 0.75rem;
         width: 100%;
         height: 15.8125rem;
@@ -254,7 +263,7 @@
         .whiteBox { 
             width: 48%;
             height: 6.875rem;
-            padding: 0.94rem 1.13rem 0.4rem;
+            padding: 0.94rem 1.13rem 0.6rem;
             border-radius: 0.9375rem;
             border: 1px solid #D4D4D4;
             background-color:#FCFCFC;
@@ -263,17 +272,16 @@
             display: flex;
 
             span {
+                height: 1rem;
                 color: #000;
                 font-size: 0.875rem;
                 font-weight: 800;
                 line-height: normal;
-                position: relative;
             }
 
             div {
                 margin-top: 1.5rem;
                 flex-direction: column;
-                position: relative;
                 display: flex;
                 justify-content: flex-end;
 
@@ -293,7 +301,22 @@
                     &:first-child { margin: 0.12rem;}
 
                     &:nth-child(2) {
+                        font-size: 0.6875rem;
+                        font-weight: 400;
+                    }
+
+                    .up {
+                        color: #F37658 !important;
+                        font-size: 0.75rem !important;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+
+                    .down {
+                        color: #3CC4F0;
                         font-size: 0.75rem;
+                        font-weight: 600;
+                        line-height: normal;
                     }
                 }
             }
@@ -338,6 +361,37 @@
         line-height: normal;
         justify-content: space-between;
         display: flex;
+
+        .left {
+            align-items: center;
+            display: flex;
+            gap: 0.35rem;
+        }
+
+        .right {
+            width: 10rem;
+            align-items: center;
+            justify-content: space-around;
+            display: flex;
+
+            span {
+                color: #BEBEBE;
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 600;
+                line-height: normal;
+                color: #5E3EC5;
+
+                & span {
+                    color: #000;
+                }
+            }
+        }
     }
 }
 

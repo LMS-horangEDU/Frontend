@@ -36,12 +36,11 @@ const StudyingProgressPieComponent = () => {
       <div className={styles.graphContainer}>
         <div className={styles.leftBox}>
           <span>
-            {" "}
             <LuMonitorPlay /> 진행중인 강의
           </span>
           <span>화면에 출력하기</span>
           <p>
-            38<span>/46</span>
+            38<span className={styles.gray}>/46</span>
           </p>
           <button>
             <span style={{ display: "flex" }}>바로 학습</span>{" "}
@@ -51,8 +50,8 @@ const StudyingProgressPieComponent = () => {
           </button>
         </div>
         <div className={styles.studyingProgressPie}>
-          <StudyingProgressPie />
           <div className={styles.percentage}>70%</div>
+          <StudyingProgressPie />
         </div>
       </div>
     </>

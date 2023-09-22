@@ -4,6 +4,8 @@ import styles from "@/styles/Layout.module.scss";
 import { VscHome } from "react-icons/vsc";
 import { BsBook } from "react-icons/bs";
 import { AiFillPieChart } from "react-icons/ai";
+import { SlBadge } from "react-icons/sl";
+import { FaRankingStar } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
@@ -21,8 +23,16 @@ const Sidebar = () => {
           <span>나의 학습 현황</span>
         </button>
         <button className={styles.navButton_inActive}>
+          <SlBadge className={styles.icon} />
+          <span>배지</span>
+        </button>
+        <button className={styles.navButton_inActive}>
+          <FaRankingStar className={styles.icon} />
+          <span>랭킹</span>
+        </button>
+        <button className={styles.navButton_inActive}>
           <AiFillPieChart className={styles.icon} />
-          <span>나의 학습 통계</span>
+          <span>코딩 MBTI</span>
         </button>
       </div>
     </aside>
