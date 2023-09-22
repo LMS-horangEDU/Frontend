@@ -1,61 +1,77 @@
 import { ResponsivePie } from "@nivo/pie";
+import styles from "@/styles/Home.module.scss";
+import Link from "next/link";
+import { IoIosArrowForward } from "react-icons/io";
+import { HiOutlineArrowSmRight } from "react-icons/hi";
+import { LuMonitorPlay } from "react-icons/lu";
 
 const StudyingProgressPie = () => (
-  <ResponsivePie
-    data={data}
-    margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-    startAngle={-8}
-    innerRadius={0.7}
-    cornerRadius={45}
-    colors={{ scheme: "category10" }}
-    borderColor={{
-      from: "color",
-      modifiers: [["darker", 0.2]],
-    }}
-    enableArcLinkLabels={false}
-    arcLinkLabelsSkipAngle={13}
-    arcLinkLabelsTextColor="#333333"
-    arcLinkLabelsOffset={-5}
-    arcLinkLabelsThickness={0}
-    arcLinkLabelsColor={{ from: "color" }}
-    enableArcLabels={false}
-    arcLabelsRadiusOffset={0.55}
-    arcLabelsSkipAngle={8}
-    arcLabelsTextColor={{
-      from: "color",
-      modifiers: [["darker", 2]],
-    }}
-    isInteractive={false}
-    defs={[
-      {
-        id: "lines",
-        type: "patternLines",
-        background: "inherit",
-        color: "rgba(255, 255, 255, 0.3)",
-        rotation: -45,
-        lineWidth: 6,
-        spacing: 10,
-      },
-    ]}
-    fill={[
-      {
-        match: {
-          id: "studyingProgress",
-        },
-        id: "lines",
-      },
-    ]}
-    legends={[]}
-  />
+  <>
+    <ResponsivePie
+      data={data}
+      /* margin={{ top: 43, right: 400, bottom: 43, left: 0 }} */
+      startAngle={-8}
+      innerRadius={0.7}
+      cornerRadius={45}
+      colors={{ scheme: "category10" }}
+      fit={true}
+      enableArcLinkLabels={false}
+      enableArcLabels={false}
+      arcLabelsRadiusOffset={0.55}
+      isInteractive={false}
+      legends={[]}
+    />
+  </>
 );
 
-export default StudyingProgressPie;
+const StudyingProgressPieComponent = () => {
+  return (
+    <>
+      <div className={styles.spaceBetweenTemplate}>
+        <span>학습 진행률</span>
+        <Link href={"/"} className={styles.moreInfo}>
+          자세히 보기 <IoIosArrowForward />
+        </Link>
+      </div>
+      <div className={styles.graphContainer}>
+        <div className={styles.leftBox}>
+          <span>
+            {" "}
+            <LuMonitorPlay /> 진행중인 강의
+          </span>
+          <span>화면에 출력하기</span>
+          <p>
+            38<span>/46</span>
+          </p>
+          <button>
+            <span style={{ display: "flex" }}>바로 학습</span>{" "}
+            <i>
+              <HiOutlineArrowSmRight />
+            </i>
+          </button>
+        </div>
+        <div className={styles.studyingProgressPie}>
+          <StudyingProgressPie />
+          <div className={styles.percentage}>70%</div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default StudyingProgressPieComponent;
 
 export const data = [
   {
     id: "studyingProgress",
     label: "studyingProgress",
-    value: 224,
-    color: "hsl(265, 70%, 50%)",
+    value: 70 / 100,
+    color: "#72d44b",
+  },
+  {
+    id: "empty",
+    label: "empty",
+    value: 1 - 70 / 100,
+    color: "#ffffff",
   },
 ];

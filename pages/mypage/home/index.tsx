@@ -5,24 +5,26 @@ import dynamic from "next/dynamic";
 import Ranking from "@/components/statistics/Ranking";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
-import badge from "../public/image/badge_01.png";
+import badge from "@/public/image/badge_01.png";
+import { HiOutlineArrowSmRight } from "react-icons/hi";
+import { LuMonitorPlay } from "react-icons/lu";
 
 const WeeklyStudyingTimeGraph = dynamic(
-  () => import("../components/statistics/WeeklyStudyingTimeGraph"),
+  () => import("@/components/statistics/WeeklyStudyingTimeGraph"),
   { ssr: false }
 );
 
 const StudyingProgressPie = dynamic(
-  () => import("../components/statistics/StudyingProgressPie"),
+  () => import("@/components/statistics/StudyingProgressPie"),
   { ssr: false }
 );
 
 const MyResponsivePie = dynamic(
-  () => import("../components/statistics/AttendanceJandi"),
+  () => import("@/components/statistics/AttendanceJandi"),
   { ssr: false }
 );
 const MyResponsiveRadar = dynamic(
-  () => import("../components/statistics/CodingMBTI"),
+  () => import("@/components/statistics/CodingMBTI"),
   { ssr: false }
 );
 
@@ -38,51 +40,25 @@ export default function Home() {
       <section className={styles.topContainer}>
         <div className={styles.weeklyStudyContainer}>
           <span>이번 주 학습 시간</span>
-          <div className={styles.innerTextContainer}>
-            <div>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  display: "flex",
-                  position: "relative",
-                }}
-              >
-                <span style={{ color: "#AAAAAA" }}>총 학습 :</span> 40 시간
-              </p>
+          <div className={styles.graphContainer}>
+            <div className={styles.innerTextContainer}>
+              <div>
+                <p>
+                  <span>총 학습 :</span> 40 시간
+                </p>
+              </div>
+              <div style={{ marginLeft: "1rem" }}>
+                <p>
+                  <span>퀴즈 단계 :</span> 20 단계
+                </p>
+              </div>
             </div>
-            <div style={{ marginLeft: "1rem" }}>
-              <p
-                style={{
-                  fontSize: "0.8125rem",
-                  display: "flex",
-                  position: "relative",
-                }}
-              >
-                <span style={{ color: "#AAAAAA" }}>퀴즈 단계 :</span> 20 단계
-              </p>
-            </div>
-          </div>
-          <div
-            style={{
-              width: "100%",
-              maxWidth: "35rem",
-              height: "15.81rem",
-            }}
-          >
             <WeeklyStudyingTimeGraph />
           </div>
         </div>
-        <div className={styles.weeklyStudyContainer}>
-          <span>학습 진행률</span>
-          <div
-            style={{
-              width: "80%",
-              height: "15.81rem",
-            }}
-          >
-            <StudyingProgressPie />
-          </div>
-        </div>
+        <section className={styles.studyingProgressContainer}>
+          <StudyingProgressPie />
+        </section>
       </section>
       <section className={styles.container}>
         <Ranking />
