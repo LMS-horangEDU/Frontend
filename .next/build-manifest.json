@@ -12,11 +12,6 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -27,15 +22,25 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/badge": [
+    "/mypage/badge": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/badge.js"
+      "static/chunks/pages/mypage/badge.js"
     ],
-    "/ranking": [
+    "/mypage/current": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/ranking.js"
+      "static/chunks/pages/mypage/current.js"
+    ],
+    "/mypage/home": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/mypage/home.js"
+    ],
+    "/mypage/ranking": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/mypage/ranking.js"
     ]
   },
   "ampFirstPages": []
