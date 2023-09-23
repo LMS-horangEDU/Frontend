@@ -5,7 +5,7 @@ import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { LuMonitorPlay } from "react-icons/lu";
-import { MagnitudeProps } from "@/interface/props";
+import { MagnitudeProps } from "@/interface/home";
 
 /**progressPie 원본 컴포넌트 */
 interface ValueProps {
