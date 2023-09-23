@@ -62,41 +62,6 @@ const Sidebar = () => {
             </button>
           </Link>
         ))}
-
-        {/* <Link href="/mypage/home">
-          <button
-            className={
-              router.pathname === "/mypage/home"
-                ? styles.navButton_active
-                : styles.navButton_inActive
-            }
-          >
-            <VscHome className={styles.icon} />
-            <span>마이페이지</span>
-          </button>
-        </Link>
-        <button
-          className={
-            router.pathname === "/mypage/current"
-              ? styles.navButton_active
-              : styles.navButton_inActive
-          }
-        >
-          <BsBook className={styles.icon} />
-          <span>나의 학습 현황</span>
-        </button>
-        <button className={styles.navButton_inActive}>
-          <SlBadge className={styles.icon} />
-          <span>배지</span>
-        </button>
-        <button className={styles.navButton_inActive}>
-          <FaRankingStar className={styles.icon} />
-          <span>랭킹</span>
-        </button>
-        <button className={styles.navButton_inActive}>
-          <AiFillPieChart className={styles.icon} />
-          <span>코딩 MBTI</span>
-        </button> */}
       </div>
     </aside>
   );
