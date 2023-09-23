@@ -22,6 +22,16 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/mypage/badge": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/mypage/badge.js"
+    ],
+    "/mypage/coding-mbti": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/mypage/coding-mbti.js"
+    ],
     "/mypage/current": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -31,6 +41,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/mypage/home.js"
+    ],
+    "/mypage/ranking": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/mypage/ranking.js"
     ]
   },
   "ampFirstPages": []
