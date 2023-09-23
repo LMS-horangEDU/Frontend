@@ -1,5 +1,14 @@
-FROM nginx
+FROM node:18.15.0
 
-COPY nginx.conf /etc/nginx/nginx.conf
+WORKDIR /app
 
-COPY build/ /usr/share/nginx/html/
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
+EXPOSE 3000
+
+CMD [ "npm", "start" ]
