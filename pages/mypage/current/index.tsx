@@ -4,6 +4,7 @@ import styles from "@/styles/Current.module.scss";
 import { LuMonitorPlay } from "react-icons/lu";
 import StudyingProgressPieComponent from "@/components/statistics/StudyingProgressPie2";
 import LectureProgressPieComponent from "../../../components/statistics/LectureProgressPie";
+import { lmsPageGetApi } from "@/store/server/get";
 
 /** 수강중인 박스 */
 const LectureBox = () => {
@@ -99,6 +100,8 @@ const CompleteLectureBox = () => {
 export default function Current() {
   /**true: 수강완료 강의 탭, false (default): 수강중인 강의 탭 이 활성화 */
   const [isLectureToggle, setIsLectureToggle] = useState(false);
+
+  const { data } = lmsPageGetApi.useGetMagnitudeData();
 
   const lectureToggleHandler = () => {
     setIsLectureToggle(!isLectureToggle);
