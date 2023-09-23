@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/mypage/ranking": "pages/mypage/ranking.js",
-  "/mypage/badge": "pages/mypage/badge.js",
+  "/mypage/home": "pages/mypage/home.js",
   "/mypage/current": "pages/mypage/current.js",
-  "/mypage/home": "pages/mypage/home.js"
+  "/mypage/ranking": "pages/mypage/ranking.js",
+  "/mypage/badge": "pages/mypage/badge.js"
 }

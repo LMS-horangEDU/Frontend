@@ -4,6 +4,33 @@
   padding: 6rem 2.37rem 3.31rem 4rem;
 }
 
+.topSpanContainer {
+  padding-left: 0.5rem;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.hello {
+  color: #F37658;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+}
+
+.randomComment {
+  padding-top: 1.2rem;
+  color: #000;
+  font-family: Pretendard Variable;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  display: flex;
+}
 
 .topContainer {
   width: 100%;

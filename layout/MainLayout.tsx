@@ -11,8 +11,14 @@ interface LayoutProps {
 const HeaderOrNot = () => {
   const router = useRouter();
 
-  if (router.pathname == "/mypage/badge" || "/mypage/ranking") return null;
-  if (router.pathname == "/mypage/home" || "/mypage/current") return <Header />;
+  if (
+    router.pathname === "/mypage/home" ||
+    router.pathname === "/mypage/current"
+  ) {
+    return <Header />;
+  } else {
+    return null;
+  }
 };
 
 const MainLayout: React.FC<LayoutProps> = ({ children }) => {
