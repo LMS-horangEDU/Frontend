@@ -153,7 +153,11 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = function() { return "a6d4035dcad0862f"; }
+=======
+/******/ 		__webpack_require__.h = function() { return "48aa3e74cba76332"; }
+>>>>>>> feature/ranking
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

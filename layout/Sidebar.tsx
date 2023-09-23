@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@/styles/Layout.module.scss";
+import { VscHome } from "react-icons/vsc";
+import { BsBook } from "react-icons/bs";
+import { AiFillPieChart } from "react-icons/ai";
 
 const Sidebar = () => {
   return (
@@ -10,16 +13,17 @@ const Sidebar = () => {
       </div>
       <div className={styles.buttonContainer}>
         <button className={styles.navButton_active}>
-          <Image
-            src="/icon/home_white.svg"
-            alt="home_white"
-            width={20}
-            height={20}
-          />{" "}
-          마이페이지
+          <VscHome className={styles.icon} />
+          <span>마이페이지</span>
         </button>
-        <button className={styles.navButton_inActive}>나의 학습 현황</button>
-        <button className={styles.navButton_inActive}>나의 학습 통계</button>
+        <button className={styles.navButton_inActive}>
+          <BsBook className={styles.icon} />
+          <span>나의 학습 현황</span>
+        </button>
+        <button className={styles.navButton_inActive}>
+          <AiFillPieChart className={styles.icon} />
+          <span>나의 학습 통계</span>
+        </button>
       </div>
     </aside>
   );

@@ -3,5 +3,10 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
+<<<<<<< HEAD
   "/badge": "pages/badge.js"
+=======
+  "/badge": "pages/badge.js",
+  "/ranking": "pages/ranking.js"
+>>>>>>> feature/ranking
 }
