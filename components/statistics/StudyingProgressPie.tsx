@@ -1,19 +1,21 @@
 import { ResponsivePie } from "@nivo/pie";
-import styles from "@/styles/Home.module.scss";
+import { useRouter } from "next/router";
+import styles from "@/styles/Current.module.scss";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { LuMonitorPlay } from "react-icons/lu";
 
+/**progressPie 원본 컴포넌트 */
 const StudyingProgressPie = () => (
   <>
     <ResponsivePie
       data={data}
       /* margin={{ top: 43, right: 400, bottom: 43, left: 0 }} */
       startAngle={-8}
-      innerRadius={0.7}
+      innerRadius={0.75}
       cornerRadius={45}
-      colors={{ scheme: "category10" }}
+      colors={["#51c741", "#b0f1ad99"]}
       fit={true}
       enableArcLinkLabels={false}
       enableArcLabels={false}
@@ -24,14 +26,23 @@ const StudyingProgressPie = () => (
   </>
 );
 
+/**내 학습 진행 현황 */
 const StudyingProgressPieComponent = () => {
+  const router = useRouter();
+
   return (
     <>
       <div className={styles.spaceBetweenTemplate}>
-        <span>학습 진행률</span>
-        <Link href={"/"} className={styles.moreInfo}>
-          자세히 보기 <IoIosArrowForward />
-        </Link>
+        <span>
+          {router.pathname == "mypage/home"
+            ? "학습 진행률"
+            : "내 학습 진도현황"}
+        </span>
+        {router.pathname == "mypage/home" ? (
+          <Link href={"/mypage/current"} className={styles.moreInfo}>
+            자세히 보기 <IoIosArrowForward />
+          </Link>
+        ) : null}
       </div>
       <div className={styles.graphContainer}>
         <div className={styles.leftBox}>
@@ -65,12 +76,10 @@ export const data = [
     id: "studyingProgress",
     label: "studyingProgress",
     value: 70 / 100,
-    color: "#72d44b",
   },
   {
     id: "empty",
     label: "empty",
     value: 1 - 70 / 100,
-    color: "#ffffff",
   },
 ];
