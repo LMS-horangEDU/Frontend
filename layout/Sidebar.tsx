@@ -31,7 +31,7 @@ const sideBarData = [
     label: "랭킹",
   },
   {
-    pathname: "/mypage/condingMbti",
+    pathname: "/mypage/coding-mbti",
     icon: <AiFillPieChart className={styles.icon} />,
     label: "코딩 MBTI",
   },

@@ -5,16 +5,8 @@ import styles from "@/styles/Current.module.scss";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { LuMonitorPlay } from "react-icons/lu";
-
-const StudyingProgressPie = dynamic(
-  () => import("@/components/statistics/StudyingProgressPie"),
-  { ssr: false }
-);
-
-const LectureProgressPieComponent = dynamic(
-  () => import("@/components/statistics/LectureProgressPie"),
-  { ssr: false }
-);
+import StudyingProgressPieComponent from "@/components/statistics/StudyingProgressPie2";
+import LectureProgressPieComponent from "../../../components/statistics/LectureProgressPie";
 
 /** 수강중인 박스 */
 const LectureBox = () => {
@@ -120,7 +112,7 @@ export default function Current() {
       <section className={styles.topContainer}>
         {/* 내 학습 진도현황 */}
         <div className={styles.studyingProgressContainer}>
-          <StudyingProgressPie />
+          <StudyingProgressPieComponent />
         </div>
 
         {/* 퀴즈 적중률 */}
