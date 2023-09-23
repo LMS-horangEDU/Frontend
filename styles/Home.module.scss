@@ -63,10 +63,9 @@
   }
 
   .innerTextContainer {
-    width: 100%;
-    max-width: 35rem;
+    width: 98%;
     height: 1rem;
-    padding: 3rem 0 1rem;
+    padding: 1.25rem 0 1rem;
     
     flex-direction: row;
     align-items: flex-end;
@@ -75,9 +74,9 @@
     justify-content: flex-end;
 
     p{
-       color: #3F3F3F;
-    font-size: 0.8125rem;
-    font-weight: 700;
+        color: #3F3F3F;
+        font-size: 0.8125rem;
+        font-weight: 700;
     }
     span {
         color: #AAA;
@@ -211,7 +210,7 @@
     }
 
     .studyingProgressPie {
-        width: 50%;
+        width: 9.75rem;
         height: 9.75rem;
         justify-content: center;
         align-items: center;

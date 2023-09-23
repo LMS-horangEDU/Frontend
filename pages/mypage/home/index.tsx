@@ -6,7 +6,6 @@ import Ranking from "@/components/statistics/Ranking";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import badge from "@/public/image/badge_01.png";
-import style from "@/styles/Graph.module.scss";
 
 const WeeklyStudyingTimeGraph = dynamic(
   () => import("@/components/statistics/WeeklyStudyingTimeGraph"),

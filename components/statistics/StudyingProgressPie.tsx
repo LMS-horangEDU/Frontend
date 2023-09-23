@@ -1,6 +1,6 @@
 import { ResponsivePie } from "@nivo/pie";
 import { useRouter } from "next/router";
-import styles from "@/styles/Current.module.scss";
+import styles from "@/styles/Home.module.scss";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import { HiOutlineArrowSmRight } from "react-icons/hi";

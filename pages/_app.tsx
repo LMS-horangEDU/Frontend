@@ -1,6 +1,6 @@
 import MainLayout from "@/layout/MainLayout";
 import "@/styles/globals.scss";
-import "../styles/Graph.scss";
+import "@/styles/graph.module.scss";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
