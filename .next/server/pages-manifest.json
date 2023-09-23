@@ -3,6 +3,8 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/mypage/home": "pages/mypage/home.js",
-  "/mypage/current": "pages/mypage/current.js",
-  "/mypage/coding-mbti": "pages/mypage/coding-mbti.js"
+  "/mypage/badge": "pages/mypage/badge.js",
+  "/mypage/ranking": "pages/mypage/ranking.js",
+  "/mypage/coding-mbti": "pages/mypage/coding-mbti.js",
+  "/mypage/current": "pages/mypage/current.js"
 }

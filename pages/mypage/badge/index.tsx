@@ -10,7 +10,7 @@ const badge = () => {
   const getMyBadge = async () => {
     try {
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_SERVER_API_URL}badge`
+        `${process.env.NEXT_PUBLIC_SERVER_API_URL}` + `/badge`
       );
       console.log(response.data.badge);
       setBadgeData(response.data.badge);

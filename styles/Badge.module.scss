@@ -58,10 +58,10 @@
 }
 .noBadge .front {
     background-color: #b2b2b2 !important;
-    & .img {
+  /*   & .img {
         @include badgeImg('none');
         filter: brightness(1) grayscale(1);
-    }
+    } */
 }
 
 .front,
