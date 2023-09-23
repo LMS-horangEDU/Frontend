@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/styles/Current.module.scss";
-/* import styles from "@/styles/Home.module.scss"; */
-import dynamic from "next/dynamic";
-import Link from "next/link";
 import { LuMonitorPlay } from "react-icons/lu";
 import StudyingProgressPieComponent from "@/components/statistics/StudyingProgressPie2";
 import LectureProgressPieComponent from "../../../components/statistics/LectureProgressPie";

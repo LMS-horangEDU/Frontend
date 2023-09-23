@@ -1,22 +1,36 @@
+@mixin badgeImg($badge, $format: 'png') {
+    $atPath: '../public/image/badge_';
+
+    background-image: url('#{$atPath}#{$badge}.#{$format}');
+    background-repeat: no-repeat;
+    background-position: center 60%;
+    background-size: contain;
+    max-width: 5rem;
+    height: 9rem;
+    transform: translateX(37%);
+}
+.badgeWrapper {
+    padding: 3.75rem;
+}
 .tabMenuController {
-    margin-bottom: 25px;
+    margin-bottom: 1.563rem;
     & button {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 700;
         color: #aaa;
         & p {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 500;
             display: inline-block;
             background-color: #5e3ec5;
             color: #fff;
-            padding: 2px 7px;
-            margin-left: 5px;
-            border-radius: 18px;
+            padding: 0.125rem 0.438rem;
+            margin-left: 0.313rem;
+            border-radius: 1.125rem;
         }
     }
     & button:first-child {
-        margin-right: 25px;
+        margin-right: 1.563rem;
     }
     & button.checked {
         color: #5e3ec5;
@@ -24,12 +38,15 @@
 }
 
 .tabContentContainer {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    gap: 15px;
 }
 .flip {
-    width: 180px;
-    height: 230px;
-    perspective: 1100px;
+    width: 11.25rem;
+    height: 14.375rem;
+    perspective: 68.75rem;
 }
 
 .badge {
@@ -38,6 +55,13 @@
     position: relative;
     transition: 0.4s;
     transform-style: preserve-3d;
+}
+.noBadge .front {
+    background-color: #b2b2b2 !important;
+    & .img {
+        @include badgeImg('none');
+        filter: brightness(1) grayscale(1);
+    }
 }
 
 .front,
@@ -49,15 +73,236 @@
     text-align: center;
     padding: 20px;
     border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .front {
     background: red;
+    & p {
+        padding-top: 20px;
+        font-weight: 700;
+    }
+
+    &.num0 {
+        background: #b4172a;
+        & .img {
+            @include badgeImg('2');
+        }
+    }
+
+    &.num1 {
+        background: #00b451;
+        .img {
+            @include badgeImg('13');
+        }
+    }
+    &.num2 {
+        background: #f4bb9c;
+        .img {
+            @include badgeImg('12');
+        }
+    }
+
+    &.num3 {
+        background: #d3ca9f;
+        .img {
+            @include badgeImg('3');
+        }
+    }
+
+    &.num4 {
+        background: #ae0061;
+        .img {
+            @include badgeImg('4');
+        }
+    }
+
+    &.num5 {
+        background: #014886;
+        .img {
+            @include badgeImg('5');
+        }
+    }
+
+    &.num6 {
+        background: #d3f268;
+        .img {
+            @include badgeImg('6');
+        }
+    }
+
+    &.num7 {
+        background: #f8bf00;
+        .img {
+            @include badgeImg('7');
+        }
+    }
+
+    &.num8 {
+        background: #d3f268;
+        .img {
+            @include badgeImg('8');
+        }
+    }
+
+    &.num9 {
+        background: #cdb3fb;
+        .img {
+            @include badgeImg('9');
+        }
+    }
+
+    &.num10 {
+        background: #fd339f;
+        .img {
+            @include badgeImg('10');
+        }
+    }
+
+    &.num11 {
+        background: #c7f1ef;
+        .img {
+            @include badgeImg('11');
+        }
+    }
+
+    &.num12 {
+        background: #f4bb9c;
+        .img {
+            @include badgeImg('12');
+        }
+    }
+
+    &.num13 {
+        background: #00b451;
+        .img {
+            @include badgeImg('13');
+        }
+    }
+
+    &.num14 {
+        background: #fef33f;
+        .img {
+            @include badgeImg('14');
+        }
+    }
+
+    &.num15 {
+        background: #fb4537;
+        .img {
+            @include badgeImg('15');
+        }
+    }
+
+    &.num16 {
+        background: #5d2189;
+        .img {
+            @include badgeImg('16');
+        }
+    }
+
+    &.num17 {
+        background: #b4172a;
+        .img {
+            @include badgeImg('2');
+        }
+    }
+
+    &.num18 {
+        background: #d3ca9f;
+        .img {
+            @include badgeImg('3');
+        }
+    }
+
+    &.num19 {
+        background: #ae0061;
+        .img {
+            @include badgeImg('4');
+        }
+    }
+
+    &.num20 {
+        background: #014886;
+        .img {
+            @include badgeImg('5');
+        }
+    }
+
+    &.num21 {
+        background: #d3f268;
+        .img {
+            @include badgeImg('6');
+        }
+    }
+
+    &.num22 {
+        background: #f8bf00;
+        .img {
+            @include badgeImg('7');
+        }
+    }
+
+    &.num23 {
+        background: #014886;
+        .img {
+            @include badgeImg('8');
+        }
+    }
+
+    &.num24 {
+        background: #cdb3fb;
+        .img {
+            @include badgeImg('9');
+        }
+    }
+
+    &.num25 {
+        background: #fd339f;
+        .img {
+            @include badgeImg('10');
+        }
+    }
+
+    &.num26 {
+        background: #c7f1ef;
+        .img {
+            @include badgeImg('11');
+        }
+    }
+
+    &.num27 {
+        background: #f4bb9c;
+        .img {
+            @include badgeImg('12');
+        }
+    }
+
+    &.num28 {
+        background: #00b451;
+        .img {
+            @include badgeImg('13');
+        }
+    }
+
+    &.num29 {
+        background: #fef33f;
+        .img {
+            @include badgeImg('14');
+        }
+    }
+    &.num30 {
+        background: #fb4537;
+        .img {
+            @include badgeImg('15');
+        }
+    }
 }
 
 // 뒷면은 사전에 미리 뒤집기
 .back {
-    background: royalblue;
+    // background: royalblue;
+    text-align: center;
     transform: rotateY(180deg);
 }
 

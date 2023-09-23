@@ -1,15 +1,22 @@
 import React from "react";
 import styles from "@/styles/Coding-mbti.module.scss";
 import Image from "next/image";
+import { CodingMbtiComponent } from "@/components/statistics/CodingMBTI";
+import { lmsPageGetApi } from "@/store/server/get";
 
 function index() {
+  const { data } = lmsPageGetApi.useGetMbtiData();
+
+  console.log(data);
   return (
     <main className={styles.totalTemplate}>
       <section className={styles.topContainer}>
         <span>나의 코딩 MBTI</span>
         <div className={styles.myCodingMbtiBox}>
           <div className={styles.leftSide}>
-            <div className={styles.graph}></div>
+            <div style={{ paddingBottom: "1rem" }}>
+              <CodingMbtiComponent />
+            </div>
             <div className={styles.result}>
               <span>나의 코딩 적성 평가 결과</span>
               <section>
@@ -88,7 +95,7 @@ function index() {
             <div className={styles.mbtiBox}>
               {" "}
               <Image
-                src="/image/developer2.png"
+                src="/image/developer3.png"
                 alt="developer"
                 width={153}
                 height={115}
@@ -106,7 +113,7 @@ function index() {
             <div className={styles.mbtiBox}>
               {" "}
               <Image
-                src="/image/developer2.png"
+                src="/image/developer1.png"
                 alt="developer"
                 width={153}
                 height={115}
@@ -124,7 +131,7 @@ function index() {
             <div className={styles.mbtiBox}>
               {" "}
               <Image
-                src="/image/developer2.png"
+                src="/image/developer3.png"
                 alt="developer"
                 width={153}
                 height={115}
