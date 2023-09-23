@@ -1,6 +1,6 @@
 /**MainLayout.tsx */
 .mainStyle {
-    height: 100vh;
+    min-height: 100vh;
     padding: 5.5rem 2.37rem 4.37rem 15.625rem;
     background-color: #fff;
 }
@@ -73,7 +73,7 @@
 .mainLayout {
     & main {
         width: calc(100% - 15.625rem);
-        min-height: 100vh;
+        // min-height: 100vh;
         margin-left: 15.625rem;
         padding: 1.875rem;
     }

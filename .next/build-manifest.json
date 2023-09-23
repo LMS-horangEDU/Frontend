@@ -27,6 +27,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/badge": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/badge.js"
+    ],
     "/ranking": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
