@@ -3,6 +3,7 @@ const path = require('path');
 
 const nextConfig = {
   reactStrictMode: false,
+  transpilePackages: ["@nivo"], experimental: { esmExternals: "loose", },
 
    sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],

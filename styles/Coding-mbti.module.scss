@@ -1,0 +1,220 @@
+/** index.tsx */
+.totalTemplate {
+  padding: 6rem 2.37rem 3.31rem 4rem;
+}
+
+.topContainer {
+  margin-top: 0.1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: #000;
+    font-size: 1.4375rem;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+  }
+}
+
+.myCodingMbtiBox {
+    margin-top: 1.6rem;
+    width: 100%;
+    height: 31rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    background: #F7F5F9;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    .leftSide {
+        width: 50%;
+        padding: 1.56rem 3.6rem 1rem 1.56rem;
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        
+        .graph {
+            width: 17.65rem;
+            height: 16.125rem;
+            background-color: #be89e5;
+            position: relative;
+        }
+
+        .result {
+            margin-top: 0.4rem;
+            position: relative;
+            flex-direction: column;
+            display: flex;
+            gap: 0.62rem;
+
+            span {
+                color: #000;
+                font-size: 0.8125rem;
+                font-weight: 500;
+                line-height: normal;
+            }
+
+            section {
+                width: 50%;
+                height: 10rem;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 0.62rem;
+            }
+            div {
+                width: 10rem;
+                height: 4.3125rem;
+                padding: 0 1rem;
+                border-radius: 1rem;
+                border: 1px solid #D4D4D4;
+                background: #FCFCFC;
+                justify-content: space-between;
+                align-items: center;
+                display: flex;
+                position: relative;
+
+                span {
+                    display: flex;
+                    position: relative;
+                    
+                    &:first-child {
+                        width: 5rem;
+                        color: #000;
+                    font-size: 1.125rem;
+                    font-weight: 800;
+                    line-height: normal;
+                    }
+
+                    &:last-child {
+                        color: #5E3EC5;
+                        font-size: 1.5rem;
+                        font-weight: 800;
+                        line-height: normal;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .rightSide {
+        width: 50%;
+        height: 28rem;
+        padding: 0.12rem 0 1.12rem 3.75rem;
+        border-left: 1px solid #c8c8c8;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+
+        .title {
+            color: #000;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: normal;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            display: flex;
+
+            span {
+                margin: 0 0.5rem;
+                padding: 0.2rem 0.8rem;
+                height: 1.625rem;
+                font-size: inherit;
+                font-weight: 700;
+                border-radius: 1.25rem;
+                background: #BE89E5;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                display: inline;
+            }
+        }
+
+        .image {
+            margin: 3rem 0 2.5rem
+        }
+
+        p {
+            width: 28.5rem;
+            height: auto;
+            color: #000;
+            font-size: 0.75rem;
+            font-weight: 400;
+            line-height: 1.25rem;
+        }
+    }
+}
+
+.container {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    & article {
+        position: relative;
+        min-height: 18.75rem;
+        & h2 {
+            margin-bottom: 1.25rem;
+            color: #000;
+            font-size: 1.4375rem;
+            font-weight: 800;
+            line-height: normal;
+        }
+    }
+    & article.ly_col_30 {
+        width: 100%;
+        min-width: 18.75rem;
+    }
+
+    section {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 1rem;
+
+                .mbtiBox {
+                    width: 35rem; 
+                    height: 12.6875rem;
+                    padding: 2rem 1.75rem 0;
+                    border-radius: 0.9375rem;
+                    border: 1px solid #D9D9D9;
+                    justify-content: space-between;
+                    display: flex;
+
+                    div {
+                        width: 19rem;
+                        flex-direction: column;
+                        display: flex;
+
+                        span {
+                            color: #000;
+                            font-size: 1rem;
+                            font-weight: 800;
+                            line-height: normal;
+                        }
+
+                        p {
+                            margin-top: 0.8rem;
+                            color: #000;
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            line-height: 1.25rem;
+                        }
+                    }
+                }
+
+            }
+
+    
+}
+
