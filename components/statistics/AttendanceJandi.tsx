@@ -16,7 +16,7 @@ const AttendanceJandi = () => {
           <button>
             <MdOutlineKeyboardArrowLeft />
           </button>
-          2015
+          2023년
           <button>
             <MdOutlineKeyboardArrowRight />
           </button>
@@ -27,8 +27,8 @@ const AttendanceJandi = () => {
         >
           <ResponsiveCalendar
             data={test}
-            from="2015-06-01"
-            to="2015-06-31"
+            from="2023-06-01"
+            to="2023-09-24"
             emptyColor="#eeeeee"
             colors={["#7BC67E"]}
             margin={{ top: 0, right: 10, bottom: 10, left: 20 }}

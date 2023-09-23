@@ -1,4 +1,4 @@
-interface MbtiInfoData {
+export interface MbtiInfoData {
     myMbti: {
         type: string,// 영어 MBTI 타입
         typeName: string, // MBTI 한글이름

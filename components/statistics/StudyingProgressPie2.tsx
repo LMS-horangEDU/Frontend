@@ -6,6 +6,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { LuMonitorPlay } from "react-icons/lu";
 import { MagnitudeProps } from "@/interface/home";
+import { lmsPageGetApi } from "@/store/server/get";
 
 /**progressPie 원본 컴포넌트 */
 interface ValueProps {
@@ -47,13 +48,15 @@ const StudyingProgressPie = ({ percentage }: ValueProps) => {
 };
 
 /**내 학습 진행 현황 */
-const StudyingProgressPieComponent = ({ magnitude }: MagnitudeProps) => {
+const StudyingProgressPieComponent = () => {
   const router = useRouter();
 
+  const { data } = lmsPageGetApi.useGetMainData();
+
   const calcPercentage = () => {
-    const completeVideoCount = magnitude?.completeVideoCount as number;
-    const totalVideoCount = magnitude?.totalVideoCount as number;
-    return (completeVideoCount / totalVideoCount) * 100;
+    const completeVideoCount = data?.magnitude?.completeVideoCount as number;
+    const totalVideoCount = data?.magnitude?.totalVideoCount as number;
+    return Math.floor((completeVideoCount / totalVideoCount) * 100);
   };
 
   return (
@@ -75,10 +78,12 @@ const StudyingProgressPieComponent = ({ magnitude }: MagnitudeProps) => {
           <span>
             <LuMonitorPlay /> 진행중인 강의
           </span>
-          <span>{magnitude?.progressVideoTitle}</span>
+          <span>{data?.magnitude?.progressVideoTitle}</span>
           <p>
-            {magnitude?.completeVideoCount}
-            <span className={styles2.gray}>/{magnitude?.totalVideoCount}</span>
+            {data?.magnitude?.completeVideoCount}
+            <span className={styles2.gray}>
+              /{data?.magnitude?.totalVideoCount}
+            </span>
           </p>
           <button>
             <span style={{ display: "flex" }}>바로 학습</span>{" "}

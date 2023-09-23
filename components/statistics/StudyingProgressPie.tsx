@@ -53,7 +53,7 @@ const StudyingProgressPieComponent = ({ magnitude }: MagnitudeProps) => {
   const calcPercentage = () => {
     const completeVideoCount = magnitude?.completeVideoCount as number;
     const totalVideoCount = magnitude?.totalVideoCount as number;
-    return (completeVideoCount / totalVideoCount) * 100;
+    return Math.floor((completeVideoCount / totalVideoCount) * 100);
   };
 
   return (
