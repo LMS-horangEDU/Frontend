@@ -35,13 +35,14 @@
   width: 100%;
   height: 17.5rem;
   display: flex;
+  gap: 1.875rem;
 }
 
 /** 이번 주 학습 시간*/
 .weeklyStudyContainer {
   width: 50%;
   height: auto !important;
-  padding: 2rem 0 0 0.5rem;
+  padding: 1.25rem 0 0 0.5rem;
   position: relative;
 
   span {
@@ -89,7 +90,6 @@
   
   .graphContainer {
     width: 100%;
-    max-width: 35rem;
     height: 15.81rem;
     position: relative;
   }
@@ -100,11 +100,11 @@
 .studyingProgressContainer {
   width: 50%;
   height: auto !important;
-  padding: 2rem 0 0 0.5rem;
+  padding: 2rem 0;
   position: relative;
 
   .spaceBetweenTemplate {
-      padding-bottom: 2rem;
+      padding-bottom: 1.25rem;
       display: flex;
       justify-content: space-between;
 
