@@ -8,7 +8,7 @@
   "mypage\\current\\index.tsx -> @/components/statistics/StudyingProgressPie": {
     "id": "mypage\\current\\index.tsx -> @/components/statistics/StudyingProgressPie",
     "files": [
-      "static/chunks/components_statistics_StudyingProgressPie_tsx-_e1ba1.js"
+      "static/chunks/components_statistics_StudyingProgressPie_tsx-_e1ba0.js"
     ]
   },
   "mypage\\home\\index.tsx -> @/components/statistics/AttendanceJandi": {
@@ -26,7 +26,7 @@
   "mypage\\home\\index.tsx -> @/components/statistics/StudyingProgressPie": {
     "id": "mypage\\home\\index.tsx -> @/components/statistics/StudyingProgressPie",
     "files": [
-      "static/chunks/components_statistics_StudyingProgressPie_tsx-_e1ba0.js"
+      "static/chunks/components_statistics_StudyingProgressPie_tsx-_e1ba1.js"
     ]
   },
   "mypage\\home\\index.tsx -> @/components/statistics/WeeklyStudyingTimeGraph": {

@@ -7,7 +7,7 @@ const WeeklyStudyingTimeGraph = () => {
       data={data}
       keys={["studying time"]}
       indexBy="day"
-      margin={{ top: 10, right: 0, bottom: 50, left: 20 }}
+      margin={{ top: 10, right: 10, bottom: 25, left: 20 }}
       padding={0.3}
       minValue={0}
       valueScale={{ type: "linear" }}

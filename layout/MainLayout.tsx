@@ -11,13 +11,10 @@ interface LayoutProps {
 const HeaderOrNot = () => {
   const router = useRouter();
 
-  if (
-    router.pathname === "/mypage/home" ||
-    router.pathname === "/mypage/current"
-  ) {
-    return <Header />;
-  } else {
+  if (router.pathname === "/mypage/ranking") {
     return null;
+  } else {
+    return <Header />;
   }
 };
 
