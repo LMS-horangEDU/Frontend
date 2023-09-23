@@ -1,9 +1,35 @@
-
 /** index.tsx */
 .totalTemplate {
   padding: 6rem 2.37rem 3.31rem 4rem;
 }
 
+.topSpanContainer {
+  padding-left: 0.5rem;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+.hello {
+  color: #F37658;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+}
+
+.randomComment {
+  padding-top: 1.2rem;
+  color: #000;
+  font-family: Pretendard Variable;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+  display: flex;
+}
 
 .topContainer {
   width: 100%;
@@ -129,8 +155,7 @@
             } 
 
             &:nth-of-type(2) {
-                margin: 0.5rem 0 0.7rem;               
-                color: #000;
+                margin: 0.5rem 0 0.7rem;                color: #000;
                 font-size: 1rem;
                 font-weight: 800;
                 line-height: normal; 
@@ -252,6 +277,7 @@
                 font-size: 0.875rem;
                 font-weight: 800;
                 line-height: normal;
+                display: flex;
             }
 
             div {
@@ -266,6 +292,7 @@
                     font-weight: 800;
                     line-height: normal;
                     display: flex;
+                    align-items: center;
                 }
                 span {
                     color: #7E7E7E;
@@ -280,19 +307,23 @@
                         font-weight: 400;
                     }
 
-                    .up {
-                        color: #F37658 !important;
-                        font-size: 0.75rem !important;
-                        font-weight: 600;
-                        line-height: normal;
-                    }
+                }
+                .up {
+                    margin-right: 0.1rem; 
+                    color: #F37658 !important;
+                    font-size: 0.75rem !important;
+                    font-weight: 600;
+                    line-height: normal;
+                    display: flex;
+                }
 
-                    .down {
-                        color: #3CC4F0;
-                        font-size: 0.75rem;
-                        font-weight: 600;
-                        line-height: normal;
-                    }
+                .down {
+                    margin-right: 0.1rem; 
+                    color: #3CC4F0;
+                    font-size: 0.75rem;
+                    font-weight: 600;
+                    line-height: normal;
+                    display: flex;
                 }
             }
         }
@@ -317,10 +348,15 @@
         justify-content: space-between;
         display: flex;
 
-        div {
-            display: flex;
-            position: relative;
-        }
+       .active {
+        color: #000000;
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+       }
+
+       .inActive {
+        color: #AAAAAA;
+       }
     }
 
     .lectureBox {
@@ -344,7 +380,7 @@
         }
 
         .right {
-            width: 10rem;
+            width: 11rem;
             align-items: center;
             justify-content: space-around;
             display: flex;
@@ -365,6 +401,25 @@
                 & span {
                     color: #000;
                 }
+            }
+
+            .processBar {
+                width: 3rem;
+                height: 3rem;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                position: relative;
+
+                .percentage {
+                color: #a000fd;
+                text-align: right;
+                font-size: 0.8rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                position: absolute;
+            }
             }
         }
     }
@@ -486,4 +541,5 @@
         right: 20px;
         bottom: -20px;
     }
-}
+
+  }

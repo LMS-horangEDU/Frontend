@@ -1,11 +1,12 @@
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import styles from '@/styles/Home.module.scss';
-import dynamic from 'next/dynamic';
-import Ranking from '@/components/statistics/Ranking';
-import Link from 'next/link';
-import { IoIosArrowForward } from 'react-icons/io';
-import badge from '@/public/image/badge_01.png';
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import styles from "@/styles/Home.module.scss";
+import dynamic from "next/dynamic";
+import Ranking from "@/components/statistics/Ranking";
+import Link from "next/link";
+import { IoIosArrowForward } from "react-icons/io";
+import badge from "../public/image/badge_01.png";
+
 
 const WeeklyStudyingTimeGraph = dynamic(() => import('@/components/statistics/WeeklyStudyingTimeGraph'), {
     ssr: false,

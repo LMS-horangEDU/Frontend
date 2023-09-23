@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const MainLayout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className={styles.mainLayout}>
+    <div>
       <Sidebar />
       <Header />
       <main className={styles.mainStyle}>{children}</main>
