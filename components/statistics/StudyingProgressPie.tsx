@@ -59,16 +59,11 @@ const StudyingProgressPieComponent = ({ magnitude }: MagnitudeProps) => {
   return (
     <>
       <div className={styles2.spaceBetweenTemplate}>
-        <span>
-          {router.pathname == "mypage/home"
-            ? "학습 진행률"
-            : "내 학습 진도현황"}
-        </span>
-        {router.pathname == "mypage/home" ? (
-          <Link href={"/mypage/current"} className={styles2.moreInfo}>
-            자세히 보기 <IoIosArrowForward />
-          </Link>
-        ) : null}
+        <span>학습 진행률</span>
+
+        <Link href={"/mypage/current"} className={styles2.moreInfo}>
+          자세히 보기 <IoIosArrowForward />
+        </Link>
       </div>
       <div className={styles2.graphContainer}>
         <div className={styles2.leftBox}>
