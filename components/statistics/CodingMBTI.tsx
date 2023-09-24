@@ -31,7 +31,7 @@ const CodingMBTI = () => {
   return (
     <article className={styles.ly_col_30}>
       <h2>나의 코딩 MBTI</h2>
-      <Link href={"/"} className={styles.moreInfo}>
+      <Link href={"/mypage/coding-mbti"} className={styles.moreInfo}>
         자세히 보기 <IoIosArrowForward />
       </Link>
       <div className={`${styles.mbtiBox} ${styles.contentBox}`}>
