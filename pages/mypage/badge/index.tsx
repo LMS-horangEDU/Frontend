@@ -4,7 +4,7 @@ import { BadgeInfoData } from "@/interface/badge";
 import axios from "axios";
 import Image from "next/image";
 
-const badge = () => {
+const Badge = () => {
   const [badgeData, setBadgeData] = useState<BadgeInfoData[]>([]);
 
   const getMyBadge = async () => {
@@ -67,4 +67,4 @@ const badge = () => {
   );
 };
 
-export default badge;
+export default Badge;
