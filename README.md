@@ -15,7 +15,7 @@
 [시연 영상](https://github.com/LMS-horangEDU/Frontend/assets/83018778/d8152136-e9c2-4566-b4f6-d6561922f466)
 
   
-### [👼LMS 환경을 둘러볼 수 있어요!](https://horangedu-lms.netlify.app/mypage/coding-mbti)  
+### [👼LMS 환경을 둘러볼 수 있어요!](https://horangedu-lms.netlify.app/mypage/home)
 
 <br/>
 
