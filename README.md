@@ -3,7 +3,8 @@
 
 ## 호랑에듀 2팀 스파르타 해커톤 (2023 항해커톤) 최우수상 수상
 
-![image](https://github.com/LMS-horangEDU/Frontend/assets/83018778/e0337de4-a346-4acb-8566-0ac8e92c16b9)
+![해커톤 상장](https://github.com/LMS-horangEDU/Frontend/assets/83018778/e70130e3-e567-4ece-8c57-7c73b36b04de)
+
 
 감사하게도 호랑 2팀이 이번 항해커톤에서 최우수 작으로 선정되면서 우승하게 되었습니다!
 
